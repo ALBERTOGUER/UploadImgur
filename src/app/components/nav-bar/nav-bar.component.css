@@ -1,0 +1,7 @@
+.navbar{
+    background: #57B092 !important;
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    top: 0px !important;
+}

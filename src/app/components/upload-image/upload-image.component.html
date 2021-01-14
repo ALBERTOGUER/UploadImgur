@@ -1,0 +1,27 @@
+<div class="container mt-5">
+  <div class="jumbotron mt-5">
+    <form class="form-signin" [formGroup]="formulario">
+      <div class="form-group">
+        <label for="exampleInputPassword1">Nombre</label>
+        <input type="text" formControlName="name"class="form-control" id="exampleInputPassword1" placeholder="Nombre">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlFile1">Example file input</label>
+        <input type="file"  class="form-control-file" id="exampleFormControlFile1" (change)='onSelectedFile($event)'>
+      </div>
+      <button type="button" class="btn btn-primary" (click)="loginservicecall()">Submit</button>
+      <h4><a [href]="link">{{link}}</a></h4>
+    </form>
+  </div>
+  <div class="card-columns mt-5">
+    <div class="card" *ngFor="let link of ArrayImages" >
+        <img [src]="link" class="card-img-top" alt="...">
+        <div class="card-body">
+
+            <h5 class="card-title"><a [href]="link">{{link}}</a></h5>
+            
+
+
+        </div>
+</div>
+</div>
